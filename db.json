@@ -1,7 +1,8 @@
 {
-    "bg": "../public/image_welcome.jpg",
+    "bg": "/imageWelcome.jpg",
     "title": "Quiz CSS da Alura",
     "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
+    "button": "Jogar",
     "questions": [
       {
         "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
@@ -38,6 +39,6 @@
         "wrong": "#FF5722",
         "success": "#4CAF50"
       },
-      "borderRadius": "4px"
+      "borderRadius": "7px"
     }
   }
