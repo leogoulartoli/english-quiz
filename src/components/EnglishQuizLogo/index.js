@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { keyframes } from 'styled-components'
 
 
-const rotate = keyframes`
+const expanding = keyframes`
   0% {
     font-size:3rem;
   }
@@ -30,7 +30,7 @@ EnglishQuizLogo.Text = styled.h1`
   font-weight:700;
   padding-top:5rem;
   margin:0;
-  animation: ${rotate} 4s infinite
+  animation: ${expanding} 4s infinite
 `;
 
 
