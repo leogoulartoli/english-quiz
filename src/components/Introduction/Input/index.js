@@ -29,7 +29,6 @@ const Input = styled.input`
 `;
 
 const ErrorMessage = styled.span `
-  margin-bottom: 2rem;
   color:red;
 `
 
@@ -53,7 +52,7 @@ const InputContainer = ({onChangeValue ,borderColor, borderRadius, placeholder, 
     ></Input>
         {isError ? (<ErrorMessage>
             {errorMessage}
-        </ErrorMessage>) : <ErrorMessage></ErrorMessage>}
+        </ErrorMessage>) : ''}
     </>
   );
 };

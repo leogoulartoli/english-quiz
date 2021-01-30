@@ -1,10 +1,10 @@
 import BackgroundImage from "../src/components/BackgroundImage";
 import EnglishQuizLogo from "../src/components/EnglishQuizLogo";
-import ButtonEnter from "../src/components/ButtonEnter";
 import LabelName from "../src/components/Introduction/LabelInput";
 import Introduction from "../src/components/Introduction";
 import IntroText from "../src/components/IntroText";
 import InputContainer from "../src/components/Introduction/Input";
+import Button from "../src/components/ButtonEnter";
 
 import { useRouter } from "next/router";
 
@@ -50,12 +50,12 @@ export default function Home() {
           isError={isErrorName}
           onChangeValue={handleChangedInput}
         ></InputContainer>
-        <ButtonEnter
+        <Button
           borderRadius={db.theme.borderRadius}
           onClick={() => {validateName(name) ? router.push(`/quiz?name=${name}`) : setIsErrorName(true);}}
         >
-          {db.button}
-        </ButtonEnter>
+          {db.buttonPlay}
+        </Button>
       </Introduction>
     </BackgroundImage>
   );

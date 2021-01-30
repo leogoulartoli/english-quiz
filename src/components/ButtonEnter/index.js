@@ -1,14 +1,15 @@
 import styled from "styled-components"
 
-const ButtonEnter = styled.button`
+const Button = styled.button`
     font-family: 'Quicksand',sans-serif;
     font-weight: 500;
     color: #1e1e1e;
     width:80%;
-    height:2.5rem;
+    height:2.8rem;
     background-color: #FFF;
     border-style:none;
     font-size: 1.3rem;
+    margin-top:2.5rem;
     border-radius: ${({borderRadius}) => borderRadius};
     &:hover{
         background-color:#efe9e9;
@@ -19,4 +20,4 @@ const ButtonEnter = styled.button`
     }
 `;
 
-export default ButtonEnter
+export default Button
