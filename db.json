@@ -32,6 +32,8 @@
         "success": "#4CAF50"
       },
       "borderRadius": "7px",
-      "borderColor": "#1e1e1e"
+      "borderColor": "#9733EE",
+      "borderColorRightAnswer": "green",
+      "borderColorWrongAnswer": "red"
     }
   }

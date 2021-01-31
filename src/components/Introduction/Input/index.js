@@ -14,17 +14,17 @@ const Input = styled.input`
       ${({ borderColor }) => borderColor}
     ),
     linear-gradient(#fff, #fff);
-  background-size: 0 1.5px, auto;
+  background-size: 0 2px, auto;
   background-repeat: no-repeat;
   background-position: center bottom;
   transition: all 0.2s ease-out;
 
   &:hover {
-    background-size: 100% 1.5px, auto;
+    
   }
   &:focus {
+    background-size: 100% 2px, auto;
     outline: none;
-    border: 1px solid ${({ borderColorFocus }) => borderColorFocus};
   }
 `;
 

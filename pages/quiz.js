@@ -11,11 +11,19 @@ const Quiz = () => {
 
   const [loading, setLoading] = React.useState(true);
   const [currentQuestion, setCurrentQuestion] = React.useState(0);
+  const [choseAnswer,setChoseAnswer] = React.useState(0);
 
   const timer = () => {
     setTimeout(() => setLoading(false), 1500);
   }
   timer();
+
+  const checkRightAnswer = (answer, rightAnswer) => {
+    if(answer == rightAnswer) {
+      console.log("right");
+
+    }
+  }
 
 
   return (
@@ -23,26 +31,23 @@ const Quiz = () => {
       {loading && <LoadingScreen></LoadingScreen>}
       {!loading && <Introduction style={{ marginTop: '300px' }}>
         <Question>
-          <Question.TitleContainer>
             <Question.Title>
               {db.questions[currentQuestion].title}
             </Question.Title>
-          </Question.TitleContainer>
           <Question.OptionContainer>
             {db.questions[currentQuestion].alternatives.map((question, index) => {
               return (
-                <Question.Option key={index}>{question}</Question.Option>
+                <Question.Option borderColor={db.theme.borderColor} onClick={()=>setChoseAnswer(index)} key={index}>{question}</Question.Option>
               );
             })}
           </Question.OptionContainer>
         </Question>
         <Button
           borderRadius={db.theme.borderRadius}
+          onClick={() => checkRightAnswer(choseAnswer,db.questions[currentQuestion].answer)}
         >
           {db.buttonCheck}
         </Button>
-
-
       </Introduction>}
     </BackgroundImage>
   );

@@ -1,4 +1,13 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const opacityAnimation = keyframes`
+  0% {
+    opacity:0
+  }
+  100% {
+    opacity:1
+  }
+`
 
 const Introduction = styled.div`
   display:flex;
@@ -10,6 +19,8 @@ const Introduction = styled.div`
   max-width: 400px;
   margin:1rem auto;
   border-radius: 14px;
+  opacity:1;
+  animation: ${opacityAnimation} 2s;
 `;
 
 export default Introduction
