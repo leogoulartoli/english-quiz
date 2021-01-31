@@ -1,1 +1,1 @@
-![english-quiz](https://user-images.githubusercontent.com/70960219/106200480-cea6ee80-6195-11eb-9b0d-3c56125de7c8.gif)
+![english-quiz](https://user-images.githubusercontent.com/70960219/106385464-371ce800-63af-11eb-88dc-a05b5bcc82f0.gif)
