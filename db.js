@@ -1,4 +1,4 @@
-{
+const db = {
     "bg": "/imageWelcome.jpg",
     "title": "Quiz CSS da Alura",
     "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
@@ -37,3 +37,5 @@
       "borderColorWrongAnswer": "red"
     }
   }
+
+export default db;

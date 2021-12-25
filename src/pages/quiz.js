@@ -1,11 +1,11 @@
 import React from "react";
-import BackgroundImage from "../src/components/BackgroundImage";
-import LoadingScreen from "../src/components/LoadingScreen";
-import Question from '../src/components/Question';
+import BackgroundImage from "../components/BackgroundImage";
+import LoadingScreen from "../components/LoadingScreen";
+import Question from '../components/Question';
 
-import db from "../db.json";
-import Introduction from "../src/components/Introduction";
-import Button from "../src/components/ButtonEnter";
+import db from "../../db";
+import Introduction from "../components/Introduction";
+import Button from "../components/ButtonEnter";
 
 const Quiz = () => {
 

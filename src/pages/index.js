@@ -1,14 +1,14 @@
-import BackgroundImage from "../src/components/BackgroundImage";
-import EnglishQuizLogo from "../src/components/EnglishQuizLogo";
-import LabelName from "../src/components/Introduction/LabelInput";
-import Introduction from "../src/components/Introduction";
-import IntroText from "../src/components/IntroText";
-import InputContainer from "../src/components/Introduction/Input";
-import Button from "../src/components/ButtonEnter";
+import BackgroundImage from "../components/BackgroundImage";
+import EnglishQuizLogo from "../components/EnglishQuizLogo";
+import LabelName from "../components/Introduction/LabelInput";
+import Introduction from "../components/Introduction";
+import IntroText from "../components/IntroText";
+import InputContainer from "../components/Introduction/Input";
+import Button from "../components/ButtonEnter";
 
 import { useRouter } from "next/router";
 
-import db from "../db.json";
+import db from "../../db";
 
 export default function Home() {
   const router = useRouter();
