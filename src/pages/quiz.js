@@ -4,8 +4,8 @@ import LoadingScreen from "../components/LoadingScreen";
 import Question from '../components/Question';
 
 import db from "../../db";
-import Introduction from "../components/Introduction";
 import Button from "../components/ButtonEnter";
+import { Introduction } from "../components/HomeComponent/style";
 
 const Quiz = () => {
 

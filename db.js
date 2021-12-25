@@ -9,7 +9,7 @@ const db = {
         "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
         "title": "Which word is similar to examine?",
         "description": "Essa é pra aquecer",
-        "answer": 2,
+        "correctAnswer": 'Inspect',
         "alternatives": [
           "Build",
           "Life",

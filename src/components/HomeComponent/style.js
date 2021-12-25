@@ -9,7 +9,7 @@ const opacityAnimation = keyframes`
   }
 `
 
-const Introduction = styled.div`
+export const Introduction = styled.div`
   display:flex;
   flex-direction: column;
   align-items: center;
@@ -23,4 +23,13 @@ const Introduction = styled.div`
   animation: ${opacityAnimation} 2s;
 `;
 
-export default Introduction
+export const LabelContainer = styled.div`
+    width:80%;
+    text-align:left;
+`
+
+export const Label = styled.label`
+    padding-left:2px;
+    font-weight:400;
+    color: ${({textColor})=> textColor};
+`;
