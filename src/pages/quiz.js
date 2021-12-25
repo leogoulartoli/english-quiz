@@ -21,10 +21,8 @@ const Quiz = () => {
   const checkRightAnswer = (answer, rightAnswer) => {
     if(answer == rightAnswer) {
       console.log("right");
-
     }
   }
-
 
   return (
     <BackgroundImage backgroundImage={db.bg}>
